@@ -35,9 +35,7 @@ def main():
         else:
             print(f"Your password has not been hacked yet.")
         answer = input("Would you like to check another password?(y/n)")
-        if answer.lower().startswith('y'):
-            re_run = True
-        else:
+        if not answer.lower().startswith('y'):
             re_run = False
     return "done!"
 
